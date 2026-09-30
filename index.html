@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Santimalla Jwalitha | Data Science Portfolio</title>
+  <meta name="description" content="Portfolio of Santimalla Jwalitha — BCA Data Science graduate skilled in Python, ML, AI, Data Analysis and Visualization." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <canvas id="bg-canvas"></canvas>
+
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo">
+        <span class="logo-initials">SJ</span>
+        <span class="logo-text">Jwalitha</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#certificates">Certs</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <a href="#contact" class="nav-cta">Hire Me</a>
+      <button class="hamburger" id="hamburger" aria-label="menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <section id="hero">
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        Available for opportunities
+      </div>
+      <h1 class="hero-name">
+        <span class="line-1">Santimalla</span>
+        <span class="line-2">Jwalitha</span>
+      </h1>
+      <p class="hero-tagline">
+        <span id="typed-text"></span><span class="cursor">|</span>
+      </p>
+      <p class="hero-desc">
+        BCA Data Science graduate passionate about transforming raw data into
+        meaningful insights. Specializing in AI-powered solutions and ML systems.
+      </p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn-primary">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V9z"/><polyline points="13 2 13 9 20 9"/></svg>
+          View Projects
+        </a>
+        <a href="#contact" class="btn-secondary">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
+          Let's Talk
+        </a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-num" data-target="2">0</span><span>+</span>
+          <span class="stat-label">Live Projects</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num" data-target="11">0</span><span>+</span>
+          <span class="stat-label">Skills Mastered</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num" data-target="3">0</span><span>+</span>
+          <span class="stat-label">Certificates</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-visual">
+      <div class="avatar-orbit-wrapper">
+        <div class="orbit-ring ring-1"></div>
+        <div class="orbit-ring ring-2"></div>
+        <div class="orbit-ring ring-3"></div>
+        <div class="avatar-frame">
+          <div class="avatar-inner">
+            <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" class="avatar-svg">
+              <defs>
+                <linearGradient id="avatarGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" style="stop-color:#a855f7"/>
+                  <stop offset="100%" style="stop-color:#06b6d4"/>
+                </linearGradient>
+                <radialGradient id="skinGrad" cx="50%" cy="40%" r="50%">
+                  <stop offset="0%" style="stop-color:#fcd7aa"/>
+                  <stop offset="100%" style="stop-color:#e8a87c"/>
+                </radialGradient>
+              </defs>
+              <circle cx="100" cy="100" r="100" fill="url(#avatarGrad)" opacity="0.25"/>
+              <ellipse cx="100" cy="170" rx="50" ry="35" fill="#1e1b4b"/>
+              <rect x="60" y="135" width="80" height="50" rx="8" fill="#312e81"/>
+              <ellipse cx="100" cy="85" rx="38" ry="42" fill="url(#skinGrad)"/>
+              <ellipse cx="100" cy="55" rx="40" ry="22" fill="#2d1f0e"/>
+              <ellipse cx="70" cy="75" rx="12" ry="25" fill="#2d1f0e"/>
+              <ellipse cx="130" cy="75" rx="12" ry="25" fill="#2d1f0e"/>
+              <ellipse cx="88" cy="85" rx="6" ry="7" fill="white"/>
+              <ellipse cx="112" cy="85" rx="6" ry="7" fill="white"/>
+              <circle cx="89" cy="86" r="4" fill="#1a0a00"/>
+              <circle cx="113" cy="86" r="4" fill="#1a0a00"/>
+              <circle cx="91" cy="84" r="1.5" fill="white"/>
+              <circle cx="115" cy="84" r="1.5" fill="white"/>
+              <path d="M 90 100 Q 100 108 110 100" stroke="#8b4513" stroke-width="2" fill="none" stroke-linecap="round"/>
+              <rect x="80" y="80" width="16" height="12" rx="3" fill="none" stroke="#a855f7" stroke-width="2" opacity="0.8"/>
+              <rect x="104" y="80" width="16" height="12" rx="3" fill="none" stroke="#a855f7" stroke-width="2" opacity="0.8"/>
+              <line x1="96" y1="86" x2="104" y2="86" stroke="#a855f7" stroke-width="2" opacity="0.8"/>
+              <path d="M 75 135 L 100 150 L 125 135" fill="#1d4ed8" opacity="0.9"/>
+            </svg>
+            <div class="avatar-glow"></div>
+          </div>
+        </div>
+        <div class="orbit-icon" style="--angle:0deg; --r:120px">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python"/>
+        </div>
+        <div class="orbit-icon" style="--angle:60deg; --r:120px">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL"/>
+        </div>
+        <div class="orbit-icon" style="--angle:120deg; --r:120px">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML"/>
+        </div>
+        <div class="orbit-icon" style="--angle:180deg; --r:120px">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/c/cf/New_Power_BI_Logo.svg" alt="PowerBI"/>
+        </div>
+        <div class="orbit-icon" style="--angle:240deg; --r:120px">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg" alt="ML"/>
+        </div>
+        <div class="orbit-icon" style="--angle:300deg; --r:120px">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg" alt="Pandas"/>
+        </div>
+      </div>
+    </div>
+
+    <div class="scroll-indicator">
+      <div class="scroll-mouse"><div class="scroll-wheel"></div></div>
+      <span>Scroll to explore</span>
+    </div>
+  </section>
+
+  <section id="about" class="section">
+    <div class="container">
+      <div class="section-label">Who I Am</div>
+      <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p class="about-lead">
+            A passionate <strong>Data Science</strong> enthusiast with a strong foundation in
+            AI, Machine Learning, and data-driven decision making.
+          </p>
+          <p>
+            Currently pursuing BCA in Data Science at Presidency University, Bangalore,
+            I bring hands-on experience building AI-powered tools including gesture-controlled
+            interfaces and multi-disease prediction systems.
+          </p>
+          <p>
+            I thrive at the intersection of technology and problem-solving — transforming
+            complex datasets into clear, actionable insights that drive smarter decisions.
+          </p>
+          <div class="about-highlights">
+            <div class="highlight-item">
+              <div class="highlight-icon">🎓</div>
+              <div>
+                <strong>BCA Data Science</strong>
+                <span>Presidency University, Bangalore &middot; CGPA: 7.9</span>
+              </div>
+            </div>
+            <div class="highlight-item">
+              <div class="highlight-icon">🏆</div>
+              <div>
+                <strong>Academic Excellence</strong>
+                <span>Class X &mdash; 99.6% | Class XII &mdash; 89.6%</span>
+              </div>
+            </div>
+            <div class="highlight-item">
+              <div class="highlight-icon">🤖</div>
+              <div>
+                <strong>AI &amp; ML Focus</strong>
+                <span>Computer Vision &middot; Predictive Analytics &middot; NLP</span>
+              </div>
+            </div>
+          </div>
+          <div class="about-links">
+            <a href="mailto:jwalithareddy1408@gmail.com" class="about-link">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 01-2.06 0L2 7"/></svg>
+              jwalithareddy1408@gmail.com
+            </a>
+            <a href="https://linkedin.com/in/jwalitha-reddy-ab0044299" target="_blank" class="about-link">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+              LinkedIn Profile
+            </a>
+          </div>
+        </div>
+        <div class="about-card-3d" id="about-card">
+          <div class="card-inner">
+            <div class="education-timeline">
+              <h3>Education Journey</h3>
+              <div class="edu-item active">
+                <div class="edu-year">2026</div>
+                <div class="edu-content">
+                  <strong>BCA (Data Science)</strong>
+                  <span>Presidency University, Bangalore</span>
+                  <div class="edu-grade">CGPA: 7.9</div>
+                </div>
+              </div>
+              <div class="edu-item">
+                <div class="edu-year">2023</div>
+                <div class="edu-content">
+                  <strong>Class XII &mdash; Science</strong>
+                  <span>Narayana Jr. College</span>
+                  <div class="edu-grade">89.6%</div>
+                </div>
+              </div>
+              <div class="edu-item">
+                <div class="edu-year">2021</div>
+                <div class="edu-content">
+                  <strong>Class X &mdash; SSC</strong>
+                  <span>DAV High School</span>
+                  <div class="edu-grade">99.6% 🥇</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills" class="section section-dark">
+    <div class="container">
+      <div class="section-label">What I Know</div>
+      <h2 class="section-title">Technical <span class="gradient-text">Skills</span></h2>
+      <p class="section-subtitle">Hover over each skill card for a 3D flip effect!</p>
+
+      <div class="skills-scene">
+        <div class="skill-card-3d"><div class="skill-card-inner"><div class="skill-card-front"><div class="skill-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python"/></div><div class="skill-name">Python</div><div class="skill-bar"><div class="skill-fill" style="--pct:90%"></div></div><div class="skill-pct">90%</div></div><div class="skill-card-back"><div class="skill-detail-title">Python</div><div class="skill-detail-desc">NumPy &middot; Pandas &middot; Scikit-learn &middot; OpenCV &middot; Flask &middot; Matplotlib</div></div></div></div>
+
+        <div class="skill-card-3d"><div class="skill-card-inner"><div class="skill-card-front"><div class="skill-icon">🤖</div><div class="skill-name">Machine Learning</div><div class="skill-bar"><div class="skill-fill" style="--pct:85%"></div></div><div class="skill-pct">85%</div></div><div class="skill-card-back"><div class="skill-detail-title">Machine Learning</div><div class="skill-detail-desc">Regression &middot; Classification &middot; CNN &middot; TensorFlow &middot; Model Evaluation</div></div></div></div>
+
+        <div class="skill-card-3d"><div class="skill-card-inner"><div class="skill-card-front"><div class="skill-icon">📊</div><div class="skill-name">Data Analysis</div><div class="skill-bar"><div class="skill-fill" style="--pct:88%"></div></div><div class="skill-pct">88%</div></div><div class="skill-card-back"><div class="skill-detail-title">Data Analysis</div><div class="skill-detail-desc">EDA &middot; Feature Engineering &middot; Statistical Analysis &middot; Data Cleaning</div></div></div></div>
+
+        <div class="skill-card-3d"><div class="skill-card-inner"><div class="skill-card-front"><div class="skill-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL"/></div><div class="skill-name">MySQL</div><div class="skill-bar"><div class="skill-fill" style="--pct:80%"></div></div><div class="skill-pct">80%</div></div><div class="skill-card-back"><div class="skill-detail-title">MySQL</div><div class="skill-detail-desc">Complex Queries &middot; Joins &middot; Stored Procedures &middot; Database Design</div></div></div></div>
+
+        <div class="skill-card-3d"><div class="skill-card-inner"><div class="skill-card-front"><div class="skill-icon"><img src="https://upload.wikimedia.org/wikipedia/commons/c/cf/New_Power_BI_Logo.svg" alt="Power BI"/></div><div class="skill-name">Power BI</div><div class="skill-bar"><div class="skill-fill" style="--pct:82%"></div></div><div class="skill-pct">82%</div></div><div class="skill-card-back"><div class="skill-detail-title">Power BI</div><div class="skill-detail-desc">Interactive Dashboards &middot; DAX &middot; Data Modeling &middot; Reports</div></div></div></div>
+
+        <div class="skill-card-3d"><div class="skill-card-inner"><div class="skill-card-front"><div class="skill-icon">✨</div><div class="skill-name">AI Tools</div><div class="skill-bar"><div class="skill-fill" style="--pct:87%"></div></div><div class="skill-pct">87%</div></div><div class="skill-card-back"><div class="skill-detail-title">AI Tools</div><div class="skill-detail-desc">ChatGPT &middot; Gemini &middot; Microsoft Copilot &middot; Prompt Engineering</div></div></div></div>
+
+        <div class="skill-card-3d"><div class="skill-card-inner"><div class="skill-card-front"><div class="skill-icon">📈</div><div class="skill-name">Data Visualization</div><div class="skill-bar"><div class="skill-fill" style="--pct:85%"></div></div><div class="skill-pct">85%</div></div><div class="skill-card-back"><div class="skill-detail-title">Data Visualization</div><div class="skill-detail-desc">Matplotlib &middot; Seaborn &middot; Plotly &middot; Power BI &middot; Tableau</div></div></div></div>
+
+        <div class="skill-card-3d"><div class="skill-card-inner"><div class="skill-card-front"><div class="skill-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML"/></div><div class="skill-name">HTML</div><div class="skill-bar"><div class="skill-fill" style="--pct:78%"></div></div><div class="skill-pct">78%</div></div><div class="skill-card-back"><div class="skill-detail-title">HTML</div><div class="skill-detail-desc">Semantic HTML5 &middot; Web Structure &middot; Accessibility &middot; Forms</div></div></div></div>
+
+        <div class="skill-card-3d"><div class="skill-card-inner"><div class="skill-card-front"><div class="skill-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" alt="C"/></div><div class="skill-name">C Language</div><div class="skill-bar"><div class="skill-fill" style="--pct:75%"></div></div><div class="skill-pct">75%</div></div><div class="skill-card-back"><div class="skill-detail-title">C Language</div><div class="skill-detail-desc">Algorithms &middot; Data Structures &middot; Memory Management &middot; Pointers</div></div></div></div>
+
+        <div class="skill-card-3d"><div class="skill-card-inner"><div class="skill-card-front"><div class="skill-icon">📋</div><div class="skill-name">MS Excel</div><div class="skill-bar"><div class="skill-fill" style="--pct:83%"></div></div><div class="skill-pct">83%</div></div><div class="skill-card-back"><div class="skill-detail-title">MS Excel</div><div class="skill-detail-desc">Pivot Tables &middot; VLOOKUP &middot; Macros &middot; Data Analysis ToolPak</div></div></div></div>
+
+        <div class="skill-card-3d"><div class="skill-card-inner"><div class="skill-card-front"><div class="skill-icon">👁️</div><div class="skill-name">Computer Vision</div><div class="skill-bar"><div class="skill-fill" style="--pct:80%"></div></div><div class="skill-pct">80%</div></div><div class="skill-card-back"><div class="skill-detail-title">Computer Vision</div><div class="skill-detail-desc">OpenCV &middot; MediaPipe &middot; Face Landmarks &middot; Gesture Recognition</div></div></div></div>
+      </div>
+
+      <div class="skill-sphere-container">
+        <div class="sphere-title">Skill Galaxy</div>
+        <div class="skill-sphere" id="skill-sphere"></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="section">
+    <div class="container">
+      <div class="section-label">What I've Built</div>
+      <h2 class="section-title">Live <span class="gradient-text">Projects</span></h2>
+      <p class="section-subtitle">Try the interactive demos below — these are real simulations of the AI systems I built.</p>
+
+      <div class="projects-grid">
+
+        <!-- PROJECT 1: GESTURE MOUSE LIVE DEMO -->
+        <article class="project-card" id="project-1">
+          <div class="project-card-inner">
+            <div class="project-visual">
+              <div class="project-live-demo" id="gesture-live">
+                <!-- Webcam Face Zone -->
+                <div class="gesture-face-zone">
+                  <div class="face-box">
+                    <div class="face-corner tl"></div><div class="face-corner tr"></div>
+                    <div class="face-corner bl"></div><div class="face-corner br"></div>
+                    <div class="face-svg-wrap">
+                      <svg viewBox="0 0 120 120" class="face-svg">
+                        <ellipse cx="60" cy="60" rx="42" ry="48" fill="none" stroke="#a855f7" stroke-width="1.5" stroke-dasharray="4 3" opacity="0.5"/>
+                        <!-- landmarks -->
+                        <circle class="lm" id="lm-nose" cx="60" cy="62" r="3" fill="#06b6d4"/>
+                        <circle class="lm" id="lm-le" cx="44" cy="50" r="2.5" fill="#a855f7"/>
+                        <circle class="lm" id="lm-re" cx="76" cy="50" r="2.5" fill="#a855f7"/>
+                        <circle class="lm" id="lm-lm" cx="48" cy="72" r="2" fill="#ec4899"/>
+                        <circle class="lm" id="lm-rm" cx="72" cy="72" r="2" fill="#ec4899"/>
+                        <!-- eye blink rects -->
+                        <rect id="eye-l" x="38" y="46" width="12" height="8" rx="4" fill="none" stroke="#a855f7" stroke-width="1.5" opacity="0.8"/>
+                        <rect id="eye-r" x="70" y="46" width="12" height="8" rx="4" fill="none" stroke="#a855f7" stroke-width="1.5" opacity="0.8"/>
+                        <path id="smile" d="M48 78 Q60 86 72 78" fill="none" stroke="#10b981" stroke-width="1.5" stroke-linecap="round"/>
+                      </svg>
+                    </div>
+                    <div class="face-label">FACE DETECTED</div>
+                    <div class="face-confidence">Confidence: <span id="conf-val">97</span>%</div>
+                  </div>
+                  <div class="gesture-stats">
+                    <div class="gstat" id="gstat-fps"><span class="gstat-val" id="fps-val">60</span><span class="gstat-lbl">FPS</span></div>
+                    <div class="gstat" id="gstat-lat"><span class="gstat-val" id="lat-val">18</span><span class="gstat-lbl">ms</span></div>
+                    <div class="gstat" id="gstat-land"><span class="gstat-val">468</span><span class="gstat-lbl">landmarks</span></div>
+                  </div>
+                </div>
+                <!-- Virtual Screen -->
+                <div class="virtual-screen" id="virtual-screen">
+                  <div class="vscreen-bar">
+                    <span class="vdot r"></span><span class="vdot y"></span><span class="vdot g"></span>
+                    <span class="vscreen-title">Virtual Desktop</span>
+                  </div>
+                  <div class="vscreen-body" id="vscreen-body">
+                    <div class="vscreen-icon" data-label="📁 Files">📁</div>
+                    <div class="vscreen-icon" data-label="🌐 Browser">🌐</div>
+                    <div class="vscreen-icon" data-label="📊 Data">📊</div>
+                    <div class="vscreen-icon" data-label="🎵 Music">🎵</div>
+                    <div class="vscreen-icon" data-label="⚙️ Settings">⚙️</div>
+                    <div class="vscreen-icon" data-label="🤖 AI Tool">🤖</div>
+                    <div class="virtual-cursor" id="virtual-cursor">
+                      <svg width="20" height="24" viewBox="0 0 20 24" fill="white"><path d="M0 0L0 20L5 15L9 24L11 23L7 14L14 14Z" fill="white" stroke="#a855f7" stroke-width="1.5"/></svg>
+                    </div>
+                    <div class="click-ripple" id="click-ripple"></div>
+                    <div class="vscreen-tooltip" id="vscreen-tooltip"></div>
+                  </div>
+                  <div class="gesture-legend">
+                    <span class="gleg"><span class="gleg-dot" style="background:#a855f7"></span>Nose = Move</span>
+                    <span class="gleg"><span class="gleg-dot" style="background:#06b6d4"></span>Blink = Click</span>
+                    <span class="gleg"><span class="gleg-dot" style="background:#ec4899"></span>Mouth = Scroll</span>
+                  </div>
+                </div>
+              </div>
+              <div class="project-tags">
+                <span class="tag">Python</span><span class="tag">OpenCV</span>
+                <span class="tag">MediaPipe</span><span class="tag">ML</span>
+              </div>
+            </div>
+            <div class="project-info">
+              <div class="project-num">01</div>
+              <h3 class="project-title">Face Gesture-Based Virtual Mouse</h3>
+              <p class="project-desc">An AI-powered virtual mouse using facial landmarks &amp; hand gestures — interact with the <strong>live sandbox</strong> on the left!</p>
+              <ul class="project-features">
+                <li><span class="feat-bullet">▹</span> 468-point facial landmark detection</li>
+                <li><span class="feat-bullet">▹</span> Nose-tip → cursor, blink → click, mouth → scroll</li>
+                <li><span class="feat-bullet">▹</span> &lt;30ms real-time latency via OpenCV pipeline</li>
+                <li><span class="feat-bullet">▹</span> Accessible hands-free computing</li>
+              </ul>
+              <div class="project-actions">
+                <button class="btn-project" onclick="openGestureDetails()">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+                  Tech Details
+                </button>
+                <a href="https://github.com/" target="_blank" class="btn-project-outline">
+                  <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.942.359.31.678.921.678 1.856 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+                  GitHub
+                </a>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- PROJECT 2: DISEASE PREDICTION LIVE DEMO -->
+        <article class="project-card project-card-reverse" id="project-2">
+          <div class="project-card-inner">
+            <div class="project-visual">
+              <div class="project-live-demo disease-demo" id="disease-live">
+                <div class="disease-header">
+                  <span class="disease-icon">🏥</span>
+                  <div>
+                    <div class="disease-title">AI Health Predictor</div>
+                    <div class="disease-sub">Multi-Disease Detection System</div>
+                  </div>
+                  <div class="disease-status"><span class="status-dot"></span>Model Ready</div>
+                </div>
+                <div class="disease-tabs">
+                  <button class="dtab active" data-disease="diabetes" onclick="switchDisease('diabetes',this)">🩸 Diabetes</button>
+                  <button class="dtab" data-disease="heart" onclick="switchDisease('heart',this)">❤️ Heart</button>
+                  <button class="dtab" data-disease="kidney" onclick="switchDisease('kidney',this)">🫘 Kidney</button>
+                </div>
+                <div class="disease-form" id="disease-form">
+                  <!-- dynamically populated -->
+                </div>
+                <button class="disease-predict-btn" id="predict-btn" onclick="runPrediction()">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><path d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/></svg>
+                  Run AI Prediction
+                </button>
+                <div class="disease-result" id="disease-result" style="display:none">
+                  <div class="result-gauge-wrap">
+                    <svg class="result-gauge" viewBox="0 0 120 70">
+                      <path d="M10 60 A50 50 0 0 1 110 60" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="10" stroke-linecap="round"/>
+                      <path id="gauge-arc" d="M10 60 A50 50 0 0 1 110 60" fill="none" stroke="#10b981" stroke-width="10" stroke-linecap="round" stroke-dasharray="157" stroke-dashoffset="157"/>
+                    </svg>
+                    <div class="gauge-pct" id="gauge-pct">0%</div>
+                    <div class="gauge-label" id="gauge-label">Risk Score</div>
+                  </div>
+                  <div class="result-verdict" id="result-verdict"></div>
+                  <div class="result-factors" id="result-factors"></div>
+                </div>
+              </div>
+              <div class="project-tags">
+                <span class="tag">Python</span><span class="tag">Flask</span>
+                <span class="tag">Scikit-learn</span><span class="tag">MySQL</span>
+              </div>
+            </div>
+            <div class="project-info">
+              <div class="project-num">02</div>
+              <h3 class="project-title">AI Multi-Disease Prediction System</h3>
+              <p class="project-desc">Try the <strong>live predictor</strong> — enter health metrics and the AI model instantly predicts disease risk across Diabetes, Heart &amp; Kidney conditions.</p>
+              <ul class="project-features">
+                <li><span class="feat-bullet">▹</span> 3 disease models: Diabetes, Heart, Kidney</li>
+                <li><span class="feat-bullet">▹</span> Random Forest + SVM + Logistic Regression</li>
+                <li><span class="feat-bullet">▹</span> Data preprocessing &amp; feature engineering</li>
+                <li><span class="feat-bullet">▹</span> Flask web app with MySQL data store</li>
+              </ul>
+              <div class="project-actions">
+                <button class="btn-project" onclick="openDiseaseDetails()">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+                  Tech Details
+                </button>
+                <a href="https://github.com/" target="_blank" class="btn-project-outline">
+                  <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.942.359.31.678.921.678 1.856 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+                  GitHub
+                </a>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="certificates" class="section section-dark">
+    <div class="container">
+      <div class="section-label">Achievements</div>
+      <h2 class="section-title">Certificates &amp; <span class="gradient-text">Recognition</span></h2>
+
+      <div class="certs-grid">
+        <div class="cert-card">
+          <div class="cert-card-inner">
+            <div class="cert-ribbon"></div>
+            <div class="cert-logo">🗄️</div>
+            <div class="cert-issuer">Scaler</div>
+            <h3 class="cert-title">RDBMS Certification</h3>
+            <p class="cert-desc">Advanced Relational Database Management, SQL optimization, schema design and query performance.</p>
+            <div class="cert-badge"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/></svg>Verified</div>
+          </div>
+        </div>
+
+        <div class="cert-card">
+          <div class="cert-card-inner">
+            <div class="cert-ribbon" style="--c:#06b6d4"></div>
+            <div class="cert-logo">🧠</div>
+            <div class="cert-issuer">Infosys Springboard</div>
+            <h3 class="cert-title">Deep Learning for Developers</h3>
+            <p class="cert-desc">Neural networks, CNNs, transfer learning, and deployment of deep learning models in production.</p>
+            <div class="cert-badge"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/></svg>Verified</div>
+          </div>
+        </div>
+
+        <div class="cert-card">
+          <div class="cert-card-inner">
+            <div class="cert-ribbon" style="--c:#10b981"></div>
+            <div class="cert-logo">🤖</div>
+            <div class="cert-issuer">Simplilearn</div>
+            <h3 class="cert-title">Machine Learning</h3>
+            <p class="cert-desc">Supervised &amp; unsupervised learning, model selection, hyperparameter tuning, and ML pipelines.</p>
+            <div class="cert-badge"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/></svg>Verified</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="strengths-section">
+        <h3 class="strengths-title">Core <span class="gradient-text">Strengths</span></h3>
+        <div class="strengths-grid">
+          <div class="strength-item"><div class="strength-icon">⚡</div><span>Quick Learner</span></div>
+          <div class="strength-item"><div class="strength-icon">👑</div><span>Leadership</span></div>
+          <div class="strength-item"><div class="strength-icon">💬</div><span>Communication</span></div>
+          <div class="strength-item"><div class="strength-icon">🧩</div><span>Analytical Thinking</span></div>
+          <div class="strength-item"><div class="strength-icon">🔄</div><span>Adaptability</span></div>
+          <div class="strength-item"><div class="strength-icon">🎯</div><span>Attention to Detail</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section">
+    <div class="container">
+      <div class="section-label">Let's Connect</div>
+      <h2 class="section-title">Get In <span class="gradient-text">Touch</span></h2>
+      <p class="section-subtitle">I'm currently open to new opportunities. My inbox is always open!</p>
+      <div class="contact-layout">
+        <div class="contact-cards">
+          <a href="mailto:jwalithareddy1408@gmail.com" class="contact-card" id="contact-email">
+            <div class="contact-card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 01-2.06 0L2 7"/></svg>
+            </div>
+            <div class="contact-card-info">
+              <span class="contact-card-label">Email</span>
+              <span class="contact-card-value">jwalithareddy1408@gmail.com</span>
+            </div>
+            <div class="contact-card-arrow">→</div>
+          </a>
+          <a href="https://linkedin.com/in/jwalitha-reddy-ab0044299" target="_blank" class="contact-card" id="contact-linkedin">
+            <div class="contact-card-icon" style="--c:#0077b5">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+            </div>
+            <div class="contact-card-info">
+              <span class="contact-card-label">LinkedIn</span>
+              <span class="contact-card-value">jwalitha-reddy-ab0044299</span>
+            </div>
+            <div class="contact-card-arrow">→</div>
+          </a>
+          <a href="tel:+919347052147" class="contact-card" id="contact-phone">
+            <div class="contact-card-icon" style="--c:#10b981">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.23 5.19a19.79 19.79 0 01-3.07-8.63A2 2 0 012.18 4.18h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 6.23a16 16 0 006.29 6.29l1.49-1.49a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+            </div>
+            <div class="contact-card-info">
+              <span class="contact-card-label">Phone</span>
+              <span class="contact-card-value">+91-9347052147</span>
+            </div>
+            <div class="contact-card-arrow">→</div>
+          </a>
+        </div>
+        <form class="contact-form" id="contact-form" onsubmit="handleSubmit(event)">
+          <div class="form-group">
+            <input type="text" id="form-name" placeholder=" " required autocomplete="name"/>
+            <label for="form-name">Your Name</label>
+          </div>
+          <div class="form-group">
+            <input type="email" id="form-email" placeholder=" " required autocomplete="email"/>
+            <label for="form-email">Your Email</label>
+          </div>
+          <div class="form-group">
+            <textarea id="form-message" rows="5" placeholder=" " required></textarea>
+            <label for="form-message">Your Message</label>
+          </div>
+          <button type="submit" class="btn-primary form-submit" id="submit-btn">
+            <span>Send Message</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+          </button>
+          <div class="form-success" id="form-success">✨ Message sent! I'll get back to you soon.</div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer id="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <span class="logo-initials">SJ</span>
+        <span>Santimalla Jwalitha</span>
+      </div>
+      <p class="footer-desc">BCA Data Science Graduate &middot; Turning data into decisions.</p>
+      <div class="footer-links">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#certificates">Certs</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <p class="footer-copy">&copy; 2024 Santimalla Jwalitha. Crafted with &hearts; &amp; code.</p>
+    </div>
+  </footer>
+
+  <div class="modal-overlay" id="modal-overlay" onclick="closeModal()">
+    <div class="modal" id="modal" onclick="event.stopPropagation()">
+      <button class="modal-close" onclick="closeModal()">&#10005;</button>
+      <div class="modal-content" id="modal-content"></div>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
